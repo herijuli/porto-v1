@@ -11,7 +11,7 @@
 
 
 body{
-  background-image: url('/assets/image/Background_dekstop.png');
+  background-image: url('/assets/image/13295064_5172658.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -51,6 +51,7 @@ p, a, td, li {
   width: 250px;
   border-radius: 30px;
   background-color: var(--based-color-1) ;
+  backdrop-filter: blur(5px);
   border: var(--border-1);
   padding: 15px;
   margin: 70px auto;
@@ -77,6 +78,7 @@ div.photo-profile{
   justify-content: space-around;
   border-radius: 20px;
   background-color: var(--based-color-1) ;
+  backdrop-filter: blur(5px);
   border: var(--border-1);
   width: 250px;
   height: 50px;
@@ -96,9 +98,6 @@ div.photo-profile{
   margin-top: 15px;
   font-weight: 700;
   color: white;
-  /* background:  linear-gradient(90deg, rgba(255,90,2,1) 14%, rgba(255,253,40,1) 51%, rgba(132,255,13,1) 90%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
 }
 
 .interest{
@@ -209,6 +208,7 @@ td{
   margin-top: 70px;
   border-radius: 30px;
   background-color: var(--based-color-1) ;
+  backdrop-filter: blur(5px);
   border: var(--border-1);
   margin-bottom: 50px;
   padding: 15px;
@@ -373,7 +373,7 @@ ul.menu li a:hover::after{
 @media (min-width: 320px) and (max-width : 576px) { 
   
     body{
-      background-image: url("/assets/image/smartphone_potrait.png");
+      background-image: url("/assets/image/13295064_5172658.jpg");
       background-size: cover;
       background-repeat: no-repeat;
     }
@@ -452,27 +452,18 @@ ul.menu li a:hover::after{
       grid-area: body2;
     }
     
-    .education-container{
-      /* display: none; */
-    }
-
- 
  }
 
 /* Medium devices (tablets, 7(68px and upm, md) */
 @media (min-width: 768px) and (max-width: 990px) {
       body{
-        background-image: url("/assets/image/Background_dekstop.png");
+        background-image: url("/assets/image/13295064_5172658.jpg");
         background-size: cover;
         background-repeat: no-repeat;
       }
 
-      .col-box{
-        display: none;
-      }
-
       .col-box-sidebar{
-        width: 80%;
+        width: 90%;
         border-radius: 10px;
         margin-top: 10px;
         display: grid;
@@ -553,6 +544,15 @@ ul.menu li a:hover::after{
 
       .col-social-tablet i{
         font-size: 20px;
+      }
+
+      .menu{
+        display: none;
+      }
+
+      .col-box{
+        width: 90%;
+        margin: 10px auto;
       }
   }
 
