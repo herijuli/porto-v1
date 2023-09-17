@@ -20,7 +20,7 @@ function screenSize(){
     },
     centeredSlides: true,
     slidesPerView: count,
-    spaceBetween : 15,
+    spaceBetween : 18,
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
