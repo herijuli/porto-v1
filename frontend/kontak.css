@@ -1,0 +1,33 @@
+.container{
+  --based-color-1 : #ffffff10 ;
+  --based-color-2 : #ffffff ;
+  --border-1 : 3px solid #ffffff50;
+  --yellow : #FAFF00;
+  --green : #29ff58;
+  font-family: 'Oswald', sans-serif;
+}
+
+.contact, .contact-description{
+  color: white;
+}
+
+.contact::after{
+  content: "";
+  display: block;
+  width: 10%;
+  height: 3px;
+  background-color: var(--green);
+}
+
+form label{
+  color: #ffffff;
+}
+
+.contact-container{
+  background-color: var(--based-color-1);
+  backdrop-filter: 5px;
+  border: var(--border-1);
+  padding: 15px;
+  border-radius: 10px;
+  margin: 20px;
+}
