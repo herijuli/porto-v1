@@ -1,53 +1,4 @@
-.container{
-  --based-color-1 : #ffffff10 ;
-  --based-color-2 : #ffffff ;
-  --border-1 : 3px solid #ffffff50;
-  --yellow : #FAFF00;
-  --green : #29ff58;
-  font-family: 'Oswald', sans-serif;
-}
-
-.portofolio{
-  color: white;
-}
-
-.portofolio::after{
-  content: "";
-  display: block;
-  width: 10%;
-  height: 3px;
-  background-color: var(--green);
-}
-
-.portofolio-container{
-  /* background-color: #ffffff28; */
-  background-color: var(--based-color-1);
-  backdrop-filter: 5px;
-  border: var(--border-1);
-  padding: 15px;
-  border-radius: 10px;
-  margin: 20px 15px;
-  display: grid;
-  grid-template-columns: 2fr 5fr;
-  grid-template-rows: 150px;
-  grid-template-areas: "porto-img porto-content";
-}
-
-.portofolio-img{
-  grid-area: porto-img;
-}
-
-.portofolio-img img{
-  width: 150px;
-  height: 150px;
-}
-.portofolio-content{
-  grid-area: porto-content;
-  color: #ffffff;
-  margin-left: 15px;
-}
-
-div.menu-slide{
+div.menu-slide {
   display: none;
 }
 
@@ -55,28 +6,13 @@ div.menu-slide ul li a{
   text-decoration: none;
   color: var(--based-color-2);
 }
+
 /* Small devices (landscape phones, 576px and up, sm) */
 @media (min-width: 320px) and (max-width : 576px) { 
-  .col-box-sidebar{
-    display: none;
-  }
-  .col-box-bottom{
-    display: none;
-  }
-  .portofolio-container{
-    display: block;
-  }
-
-  .portofolio-img img{
-    display: block;
-    margin: 10px auto;
-    text-align: center;
-  }
-
-   /* for menu slide */
-   div.menu-slide{
+  /* for menu slide */
+  div.menu-slide{
     width: 100%;
-    height: 60%;
+    height: 70%;
     /* background-color: black; */
     background-image: url("/assets/image/13295064_5172658.jpg");
     color: #ffffff;
@@ -115,13 +51,19 @@ div.menu-slide ul li a{
 
   /* end for menu slide */
 
+
+
+
+  .col-box{
+    position: relative;
+    /* z-index: -11; */
+  }
 }
+
+
 
 /* Medium devices (tablets, 7(68px and upm, md) */
 @media (min-width: 768px) and (max-width: 990px) {
-  .col-box-sidebar{
-    display: none;
-  }
 
   /* for menu slide */
   div.menu-slide{

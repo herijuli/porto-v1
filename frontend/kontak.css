@@ -7,11 +7,11 @@
   font-family: 'Oswald', sans-serif;
 }
 
-.portofolio{
+.contact, .contact-description{
   color: white;
 }
 
-.portofolio::after{
+.contact::after{
   content: "";
   display: block;
   width: 10%;
@@ -19,35 +19,25 @@
   background-color: var(--green);
 }
 
-.portofolio-container{
-  /* background-color: #ffffff28; */
+form label{
+  color: #ffffff;
+}
+
+.contact-container{
   background-color: var(--based-color-1);
   backdrop-filter: 5px;
   border: var(--border-1);
   padding: 15px;
   border-radius: 10px;
-  margin: 20px 15px;
-  display: grid;
-  grid-template-columns: 2fr 5fr;
-  grid-template-rows: 150px;
-  grid-template-areas: "porto-img porto-content";
+  margin: 20px;
 }
 
-.portofolio-img{
-  grid-area: porto-img;
-}
-
-.portofolio-img img{
-  width: 150px;
-  height: 150px;
-}
-.portofolio-content{
-  grid-area: porto-content;
+.btn-submit{
+  
   color: #ffffff;
-  margin-left: 15px;
 }
 
-div.menu-slide{
+div.menu-slide {
   display: none;
 }
 
@@ -55,26 +45,11 @@ div.menu-slide ul li a{
   text-decoration: none;
   color: var(--based-color-2);
 }
+
 /* Small devices (landscape phones, 576px and up, sm) */
 @media (min-width: 320px) and (max-width : 576px) { 
-  .col-box-sidebar{
-    display: none;
-  }
-  .col-box-bottom{
-    display: none;
-  }
-  .portofolio-container{
-    display: block;
-  }
-
-  .portofolio-img img{
-    display: block;
-    margin: 10px auto;
-    text-align: center;
-  }
-
-   /* for menu slide */
-   div.menu-slide{
+  /* for menu slide */
+  div.menu-slide{
     width: 100%;
     height: 60%;
     /* background-color: black; */
@@ -115,13 +90,23 @@ div.menu-slide ul li a{
 
   /* end for menu slide */
 
-}
-
-/* Medium devices (tablets, 7(68px and upm, md) */
-@media (min-width: 768px) and (max-width: 990px) {
   .col-box-sidebar{
     display: none;
   }
+  .col-box-bottom{
+    display: none;
+  }
+
+  .col-box{
+    position: relative;
+    /* z-index: -11; */
+  }
+}
+
+
+
+/* Medium devices (tablets, 7(68px and upm, md) */
+@media (min-width: 768px) and (max-width: 990px) {
 
   /* for menu slide */
   div.menu-slide{
@@ -167,5 +152,7 @@ div.menu-slide ul li a{
 
 
   /* end for menu slide */
-
+  .col-box-sidebar{
+    display: none;
+  }
 }

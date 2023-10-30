@@ -19,6 +19,7 @@
     <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <!-- for custome css -->
     <link rel="stylesheet" href="frontend/main.css">
+    <link rel="stylesheet" href="frontend/home.css">
     <!-- for kit font awesome -->
     <script src="https://kit.fontawesome.com/48981cbc3d.js" crossorigin="anonymous"></script>
   </head>
@@ -27,9 +28,18 @@
       <div class="row">
         <!-- For sidebar col profile -->
         <div class="col-12  col-lg-4 p-0">
+          <div class="menu-slide" id="menu-slide">
+            <i class="fa-sharp fa-solid fa-x" id="close-bar" style="color: #ffffff;"></i>
+            <ul>
+              <li class="active"><a href="home.html">Beranda</a></li>
+              <li><a href="portofolio.html">Portofolio</a></li>
+              <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+          </div>
+
          <div class="sidebar-container">
             <nav class="nav-mobile ">
-              <i class="fa-solid fa-bars" style="color: #f7f9fd;" ></i>
+              <i class="fa-solid fa-bars" id="bars" style="color: #f7f9fd;" ></i>
               <p class="text-light " >Beranda</p>
             </nav>
 
@@ -77,12 +87,12 @@
         <!-- end for side bar col profile -->
 
         <!-- For item utama -->
-        <div class="col-md-7  p-0">
+        <div class="col-md-12 col-lg-7 p-0">
           <div class="col-box">
             <ul class="menu">
-              <li><a href="#">Tentang</a></li>
-              <li><a href="#">Portofolio</a></li>
-              <li><a href="#">kontak</a></li>
+              <li><a href="home.html">Beranda</a></li>
+              <li><a href="portofolio.html">Portofolio</a></li>
+              <li><a href="kontak.html">kontak</a></li>
             </ul>
             <h3 class="title">Tentang</h3>
             <p class="about">Sebagai lulusan S1 Teknik Informatika dari STMIK Jayakarta, saya memiliki keterampilan 
@@ -151,14 +161,7 @@
                     <div class="swiper-slide" style="padding: 5px;">
                       <div style="height: 70%;" class="text-center">
                         <img src="assets/icon/laravel.svg" alt="">
-                        <p>Intermediate</p>
-                      </div>
-                    </div>
-
-                    <div class="swiper-slide" style="padding: 5px;">
-                      <div style="height: 70%;" class="text-center">
-                        <img src="assets/icon/express.svg" alt="">
-                        <p>Intermediate</p>
+                        <p>Beginer</p>
                       </div>
                     </div>
 
@@ -172,7 +175,7 @@
                     <div class="swiper-slide" style="padding: 5px;">
                       <div style="height: 70%;" class="text-center">
                         <img src="assets/icon/git.svg" alt="">
-                        <p>Intermediate</p>
+                        <p>Beginer</p>
                       </div>
                     </div>
 
@@ -211,5 +214,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>  
     <script src="frontend/myswipper.js" type="text/JavaScript"></script>
+    <script src="frontend/menu-slide.js" type="text/JavaScript"></script>
   </body>
 </html>
